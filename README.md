@@ -17,6 +17,6 @@ view(data)
   4. Appropriately labels the data set with descriptive variable names. <br>
   5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-  Each step is described with comments in run_analysis.R.  No other scripts are needed.  As noted above, in Step 2, the extract contains only variables contining a mean or sd, identified as those containing mean() or std() in the variable name, as identified in features_info.txt included with the original data.  For additional detail on the variables included, see the codebook.
+  Each step is described with comments in run_analysis.R. No other scripts are needed. This script can be run as long as the Samsung data folder "UCI HAR Dataset" is in your working directory.  As noted above, in Step 2, the extract contains only variables contining a mean or sd, identified as those containing mean() or std() in the variable name, as identified in features_info.txt included with the original data.  For additional detail on the variables included, see the codebook.
 <br><br>
 * **CodeBook.md** : This is the codebook for the tidy data file.
