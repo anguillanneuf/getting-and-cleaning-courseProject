@@ -12,7 +12,7 @@ The resulting tidy data set contains 68 variables: identifiers for subjects and 
 
 ### Variables included in the tidy data set are:
 * **subject**: a number from 1 to 30, identifying each of the 30 individual subjects in the data set.
-* **activty**: a description of each of six activities for which measurments were taken from each subject.  These activities are: LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS.  Each individual has average meaurements for each of these six activities.
+* **activty**: a description of each of six activities for which measurments were taken from each subject.  These activities are: LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS.  Each individual has means of meaurements for each of these six activities.
 <br><br>
 
 * *Means of meaurments*: grouped means of standardized and bounded measurements, for each subject-activity pair, which are themselves the means and standard deviatations of signals in the original data.  For additional detail on the specific measurements, see "features_info.txt" included with the data.  The means included here are:
