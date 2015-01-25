@@ -1,4 +1,4 @@
-# Code book for Courser Project
+# Code book for Coursera Project
 
 ## Constructing the tidy data set
 
@@ -6,14 +6,16 @@ To construct the tidy data set, a series of transformations and merges was perfo
 
 This combined data set was then used to generate an extract of all variables containing a mean or standard deviation of a measurement.  These were identified using the grepl R command, looking for the pattern "-mean()-" or "-mean()" or "-std()-" or "-sd()" in the list of varible names, "features.txt."  66 such variables were identified and included in the extract, along with the identification for subjects and activities.<br><br>
 
-Activities were labeled with the descriptive (English-language) name as provided in "activity_labels.txt" and the variable labels in "features.txt" were modified to conform with R style (removing hyphens and parentheses, and cleaning up some upicated text).  Finally, the reshape package was used to create the tidy data set containing the mean for each of these 66 variables (each one the mean or sd of a measurement) by each subject-activity pair.
+Activities were labeled with the descriptive (English-language) name as provided in "activity_labels.txt" and these variable labels in "features.txt" were modified to conform with R style (removing hyphens and parentheses, and cleaning up some duplicated text).  Finally, the reshape package was used to create the tidy data set containing the mean for each of these 66 variables (each one the mean or sd of a measurement) by each subject-activity pair.
 
 The resulting tidy data set contains 68 variables: identifiers for subjects and activities as well as 66 means of variables.  As noted in the "features.txt" file, each measurement is normalized and bounded within [-1,1]
 
 ### Variables included in the tidy data set are:
-* **Subject**: a number from 1 to 30, identifying each of the 30 individual subjects in the data set.
-* ** Activty**: a description of each of six activities for which measurments were taken from each subject.  These activities are: LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS.  Each individual has average meaurements for each of these six activities.
-* **Means of meaurments**: grouped means of standardized and bounded measurements, for each subject-activity pair, which are themselves the means and standard deviatations of signals in the original data.  For additional detail on the specific measurements, see "features_info.txt" included with the data.  The means included here are:
+* **subject**: a number from 1 to 30, identifying each of the 30 individual subjects in the data set.
+* **activty**: a description of each of six activities for which measurments were taken from each subject.  These activities are: LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS.  Each individual has average meaurements for each of these six activities.
+<br><br>
+
+* *Means of meaurments*: grouped means of standardized and bounded measurements, for each subject-activity pair, which are themselves the means and standard deviatations of signals in the original data.  For additional detail on the specific measurements, see "features_info.txt" included with the data.  The means included here are:
 * **tBodyAcc.mean.X**:  Group mean of  time domain signal for mean of BodyAcc in the X direction
 * **tBodyAcc.mean.Y**:  Group mean of  time domain signal for mean of BodyAcc in the Y direction
 * **tBodyAcc.mean.Z**:  Group mean of  time domain signal for mean of BodyAcc in the Z direction
