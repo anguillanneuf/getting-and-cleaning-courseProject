@@ -7,7 +7,7 @@ This repo contains the following files:
 <br><br>
 The resulting tidy data file has 180 rows and 68 columns (66 means of variables and identifiers for subject and acitivity).  Thus each variable forms a column and each observtion (a subject-activity pair) forms a row, in accordance with the principals of tidy data outlined by Hadley Wickham here: http://www.jstatsoft.org/v59/i10/paper.
 <br><br>
-To load this data into R and inspect it, you can download it to your working directory and use: <br>
+To load this data into R and inspect it, you can download it to your working directory and use (as suggested by David Hood on the Discussion Forum here https://class.coursera.org/getdata-010/forum/thread?thread_id=49): <br>
 data <- read.table("tidy_data.txt")<br>
 view(data)<br><br>
 * **run_analyis.R** : This R script generates the tidy data set uploaded to Coursera.  It requires the "reshape" package. This script executes each of the five steps outlined in the Course Project Description: <br>
