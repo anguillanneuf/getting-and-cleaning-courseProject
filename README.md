@@ -9,7 +9,7 @@ The resulting tidy data file has 180 rows and 68 columns (66 means of variables 
 <br><br>
 To load this data into R and inspect it, you can download it to your working directory and use (as suggested by David Hood on the Discussion Forum here https://class.coursera.org/getdata-010/forum/thread?thread_id=49): <br>
 data <- read.table("tidy_data.txt")<br>
-view(data)<br><br>
+view(data)
 * **run_analyis.R** : This R script generates the tidy data set uploaded to Coursera.  It requires the "reshape" package. This script executes each of the five steps outlined in the Course Project Description: <br>
   1. Merges the training and the test sets to create one data set. <br>
   2. Extracts only the measurements on the mean and standard deviation for each measurement. <br>
